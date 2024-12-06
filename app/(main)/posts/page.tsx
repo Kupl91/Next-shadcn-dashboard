@@ -1,16 +1,15 @@
-import BackButton from "@/components/BackButton"
-import PostsPagination from "@/components/posts/PostsPagination"
-import PostsTable from "@/components/posts/PostsTable"
-
+import PostsTable from '@/components/posts/PostsTable';
+import BackButton from '@/components/BackButton';
+import PostsPagination from '@/components/posts/PostsPagination';
 
 const PostsPage = () => {
   return (
     <>
-        <BackButton text="Go Back" link="/" />
-        <PostsTable />
-        <PostsPagination />
+      <BackButton text='Go Back' link='/' />
+      <PostsTable />
+      <PostsPagination />
     </>
-  )
-}
+  );
+};
 
-export default PostsPage
+export default PostsPage;
