@@ -4,6 +4,7 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem={true}
+        storageKey="dashboard-theme"
+        >
         <Navbar />
         <div className="flex">
           <div className="hidden md:block h-[100vh] w-[300px]">
@@ -41,6 +48,7 @@ export default function RootLayout({
           </div>
         </div>
         <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
