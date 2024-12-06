@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Avatar, AvatarImage, AvatarFallback } from './avatar'
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -9,7 +9,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
-import logo from '../../img/logo.png'
+import logo from '../img/logo.png'
 
 
 const Navbar = () => {
